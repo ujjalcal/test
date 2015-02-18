@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<!-- Database connection settings -->
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://onboardingdb.cmchtd4a1ssi.us-east-1.rds.amazonaws.com:3306/obdb</property>
+  <property name="hibernate.connection.username">onboarding</property>
+  <property name="hibernate.connection.password">onboarding</property>
+  
+  <!-- JDBC Connection pool size -->
+  <property name="connection.pool_size">1</property>
+  
+  <!-- SQL dialect -->
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  
+  <!-- echo all sql in stdout -->
+  <property name="show_sql">true</property>
+  
+  <!-- Mapping to POJO class -->
+  <mapping class="com.onboarding.hibernate.Employee"/>
+  
+ </session-factory>
+</hibernate-configuration>

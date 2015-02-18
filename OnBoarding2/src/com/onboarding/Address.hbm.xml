@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 17, 2015 9:43:47 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Address" table="address" catalog="obdb">
+        <composite-id name="id" class="AddressId">
+            <key-property name="empId" type="string">
+                <column name="emp_id" length="11" />
+            </key-property>
+            <key-property name="address1" type="string">
+                <column name="address1" length="20" />
+            </key-property>
+            <key-property name="address2" type="string">
+                <column name="address2" length="20" />
+            </key-property>
+            <key-property name="city" type="string">
+                <column name="city" length="20" />
+            </key-property>
+            <key-property name="state" type="string">
+                <column name="state" length="20" />
+            </key-property>
+            <key-property name="country" type="string">
+                <column name="country" length="20" />
+            </key-property>
+            <key-property name="valid" type="binary">
+                <column name="valid" />
+            </key-property>
+            <key-property name="phone1" type="string">
+                <column name="phone1" length="11" />
+            </key-property>
+            <key-property name="phone2" type="string">
+                <column name="phone2" length="11" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

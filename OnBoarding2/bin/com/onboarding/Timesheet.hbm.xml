@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 17, 2015 9:43:47 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Timesheet" table="timesheet" catalog="obdb">
+        <composite-id name="id" class="TimesheetId">
+            <key-property name="empId" type="string">
+                <column name="emp_id" length="11" />
+            </key-property>
+            <key-property name="timesheetId" type="string">
+                <column name="timesheet_id" length="11" />
+            </key-property>
+            <key-property name="cycleDate" type="string">
+                <column name="cycle_date" length="11" />
+            </key-property>
+            <key-property name="sun" type="string">
+                <column name="sun" length="11" />
+            </key-property>
+            <key-property name="mon" type="string">
+                <column name="mon" length="11" />
+            </key-property>
+            <key-property name="tue" type="string">
+                <column name="tue" length="11" />
+            </key-property>
+            <key-property name="wed" type="string">
+                <column name="wed" length="11" />
+            </key-property>
+            <key-property name="thurs" type="string">
+                <column name="thurs" length="11" />
+            </key-property>
+            <key-property name="fri" type="string">
+                <column name="fri" length="11" />
+            </key-property>
+            <key-property name="sat" type="string">
+                <column name="sat" length="11" />
+            </key-property>
+            <key-property name="vendorId" type="string">
+                <column name="vendor_id" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

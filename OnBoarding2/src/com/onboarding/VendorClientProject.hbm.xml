@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 17, 2015 9:43:47 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VendorClientProject" table="vendor_client_project" catalog="obdb">
+        <composite-id name="id" class="VendorClientProjectId">
+            <key-property name="vendorId" type="string">
+                <column name="vendor_id" length="11" />
+            </key-property>
+            <key-property name="clientId" type="string">
+                <column name="client_id" length="11" />
+            </key-property>
+            <key-property name="projectId" type="string">
+                <column name="project_id" length="11" />
+            </key-property>
+            <key-property name="validTill" type="date">
+                <column name="valid_till" length="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 17, 2015 9:43:47 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Employee" table="employee" catalog="obdb">
+        <composite-id name="id" class="EmployeeId">
+            <key-property name="empId" type="string">
+                <column name="emp_id" length="11" />
+            </key-property>
+            <key-property name="username" type="string">
+                <column name="username" length="20" />
+            </key-property>
+            <key-property name="fname" type="string">
+                <column name="fName" length="20" />
+            </key-property>
+            <key-property name="lname" type="string">
+                <column name="lName" length="20" />
+            </key-property>
+            <key-property name="dob" type="string">
+                <column name="dob" length="20" />
+            </key-property>
+            <key-property name="email" type="string">
+                <column name="email" length="20" />
+            </key-property>
+            <key-property name="password" type="string">
+                <column name="password" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

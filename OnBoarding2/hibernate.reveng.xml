@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="obdb" match-name="address"/>
+  <table-filter match-catalog="obdb" match-name="client"/>
+  <table-filter match-catalog="obdb" match-name="education"/>
+  <table-filter match-catalog="obdb" match-name="employee"/>
+  <table-filter match-catalog="obdb" match-name="experience"/>
+  <table-filter match-catalog="obdb" match-name="project"/>
+  <table-filter match-catalog="obdb" match-name="timesheet"/>
+  <table-filter match-catalog="obdb" match-name="vendor"/>
+  <table-filter match-catalog="obdb" match-name="vendor_client_project"/>
+  <table-filter match-catalog="obdb" match-name="visa"/>
+</hibernate-reverse-engineering>
